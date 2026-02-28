@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарен сайт</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #08236e 100%);
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .recipes-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .recipe-card {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .recipe-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .recipe-card p {
+            margin: 10px 0;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="recipe-keks.html" target="_blank">Рецепта за кекс</a></li>
+            <li><a href="recipe-bonboni.html" target="_blank">Рецепта за бонбони</a></li>
+            <li><a href="recipe-pita.html" target="_blank">Рецепта за питка</a></li>
+        </ul>
+    </nav>
+
+    <div class="recipes-container">
+        <div class="recipe-card">
+            <img src="https://recepti.gotvach.bg/files/lib/250x250/aromaten-keks-kanela-orehi1.webp" alt="Кекс">
+            <p>Рецепта за кекс</p>
+        </div>
+        <div class="recipe-card">
+            <img src="https://m.1001recepti.com/images/photos/recipes/size_5/biskviteni-topcheta-s-techen-shokolad-bez-pechene-c7eacda8cf0f05149d5e6f7f352269c6-[108713].jpg" alt="Бонбони">
+            <p>Рецепта за бонбони</p>
+        </div>
+        <div class="recipe-card">
+            <img src="https://receptite.com/photos/2020/17/big/R19354ULirinkaN23494.jpg" alt="Питка">
+            <p>Рецепта за питка</p>
+        </div>
+    </div>
+</body>
+</html>
